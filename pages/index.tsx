@@ -1,14 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <main>
       <div>
-        <span>Starting the project mercadolibre clone</span>
+        <span className="text-blue-700">Starting the project mercadolibre clone</span>
       </div>
     </main>
   );
