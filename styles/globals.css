@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.debug {
+    @apply border-red-500 border-solid border;
+}
+
+.nav-items li {
+    @apply text-sm text-[#333333] ;
+}
+
+.nav-account li {
+    @apply text-sm text-[#333333] ;
+}
