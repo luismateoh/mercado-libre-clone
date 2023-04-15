@@ -7,6 +7,29 @@
     @apply border-red-500 border-solid border;
 }
 
+body {
+    @apply flex flex-col;
+}
+
+.section-container {
+    @apply mx-auto px-4 py-2 sm:max-w-full sm:py-2 md:max-w-full md:px-4 lg:max-w-[1248px] lg:px-6 flex flex-col ;
+}
+
+.section-title {
+    @apply flex gap-4 pl-2;
+}
+
+.section-title h2 {
+    @apply font-light text-[25px] leading-[31px] text-[#666666];
+}
+.section-title a {
+    @apply no-underline font-normal text-[15px] leading-5 text-[#3483fa] mt-2.5;
+}
+
+footer {
+    @apply flex flex-col items-center justify-center ;
+}
+
 .nav-items li {
     @apply text-sm text-[#333333] ;
 }

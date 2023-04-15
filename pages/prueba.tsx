@@ -16,13 +16,13 @@ export default function Home() {
       <main>
         <Banner />
         <Payments />
-        <Offers />
+        {/*<Offers />*/}
         <Subscription />
         <Benefits />
         <Discover />
         <Stores />
         <Collections />
-        <Categories />
+        {/*<Categories />*/}
       </main>
       {/*<Footer/>*/}
     </>

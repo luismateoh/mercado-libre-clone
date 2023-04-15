@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       colors: {
         yellow_ml: '#fff159',
+        subscription_gradient:
+          'linear-gradient(90deg, #a90f90 55%, #0c1a51 100%)',
       },
     },
   },
