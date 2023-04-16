@@ -8,6 +8,7 @@ import { Discover } from '@/components/Discover';
 import { Stores } from '@/components/Stores';
 import { Collections } from '@/components/Collections';
 import { Categories } from '@/components/Categories';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
         <Collections />
         <Categories />
       </main>
-      {/*<Footer/>*/}
+      <Footer />
     </>
   );
 }

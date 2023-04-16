@@ -149,8 +149,8 @@ const Header = () => {
               </div>
 
               {isMenuOpen && (
-                <div className='absolute left-0 top-0 w-full'>
-                  <div className='rounded border bg-white p-5 shadow-sm'>
+                <div className='absolute left-0 top-0 z-20 w-full '>
+                  <div className=' rounded border bg-white p-5 shadow-sm'>
                     <div className='mb-4 flex items-center justify-between'>
                       <Image
                         src='./media/icons/logo-meli.svg'
@@ -220,9 +220,9 @@ const Header = () => {
               <ul className='inline-flex h-9 items-center sm:mr-3 '>
                 <li className='text-gray flex items-center gap-1 text-base text-[#333333] sm:mr-2 md:mr-2 lg:mr-8'>
                   <MdOutlineLocationOn className='h-5 w-5 text-gray-600' />
-                  <a className='text-sm font-normal text-[#333333]' href='#'>
+                  <Link className='text-sm font-normal text-[#333333]' href='#'>
                     Ingresa tu domicilio
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul className='nav-items inline-flex h-9 items-center gap-3 text-center'>

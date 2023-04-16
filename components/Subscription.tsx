@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Service {
   imageSrc: string;
@@ -7,17 +8,17 @@ interface Service {
 }
 const services: Service[] = [
   {
-    imageSrc: './media/icons/diney-plus.svg',
+    imageSrc: '/media/icons/diney-plus.svg',
     imageAlt: 'Disney+',
     title: 'Disney+ sin cargo',
   },
   {
-    imageSrc: './media/icons/star-plus.svg',
+    imageSrc: '/media/icons/star-plus.svg',
     imageAlt: 'Star+',
     title: 'Star+ sin cargo',
   },
   {
-    imageSrc: './media/images/truck-meli-icon.png',
+    imageSrc: '/media/images/truck-meli-icon.png',
     imageAlt: 'Envíos gratis y rápidos',
     title:
       'Envíos gratis y rápidos desde $ 90.000 y 40% OFF en envíos de menos de $ 90.000',
@@ -61,9 +62,11 @@ const Subscription = () => {
                   className='flex flex-row items-center'
                 >
                   <div className='mr-2 flex h-16 w-16 min-w-[64px] items-center justify-center rounded-full border border-solid border-gray-300'>
-                    <img
+                    <Image
                       src={service.imageSrc}
                       alt={service.imageAlt}
+                      width={48}
+                      height={48}
                       className='h-12 w-12 rounded-full object-fill'
                     />
                   </div>

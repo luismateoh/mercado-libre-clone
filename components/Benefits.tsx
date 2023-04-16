@@ -1,28 +1,30 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const benefits = [
   {
-    imageUrl: './media/images/benefit-bg-1.png',
+    imageUrl: '/media/images/benefit-bg-1.png',
     imageAlt: 'Disney+ y Star+',
     gradientColor: '#081330',
-    brandImageUrl: './media/images/benefit-brand-1.png',
+    brandImageUrl: '/media/images/benefit-brand-1.png',
     brandName: 'Disney+ y Star+',
     promoDiscount: 'Sin cargo con el nivel 6',
   },
   {
-    imageUrl: './media/images/benefit-bg-2.png',
+    imageUrl: '/media/images/benefit-bg-2.png',
     imageAlt: '7 DÍAS GRATIS',
     gradientColor: '#3c034e',
-    brandImageUrl: './media/images/benefit-brand-2.png',
+    brandImageUrl: '/media/images/benefit-brand-2.png',
     brandName: 'HBO Max',
     promoText: '7 DÍAS GRATIS',
     promoDiscount: 'Hasta 50% OFF',
   },
   {
-    imageUrl: './media/images/benefit-bg-3.png',
+    imageUrl: '/media/images/benefit-bg-3.png',
     imageAlt: '7 DÍAS GRATIS',
     gradientColor: '#0064ff',
-    brandImageUrl: './media/images/benefit-brand-3.png',
+    brandImageUrl: '/media/images/benefit-brand-3.png',
     brandName: 'Paramount+',
     promoText: '7 DÍAS GRATIS',
     promoDiscount: 'Hasta 50% OFF',
@@ -30,11 +32,11 @@ const benefits = [
 ];
 const Benefits = () => {
   return (
-    <section className='bg-[#ebebeb]' id='Benefits'>
+    <section className='bg-[#ebebeb] pb-16' id='Benefits '>
       <div className='section-container'>
         <div className='section-title'>
           <h2>Beneficios de Mercado Puntos</h2>
-          <a href=''>Ver todos los beneficios</a>
+          <Link href=''>Ver todos los beneficios</Link>
         </div>
         <div className='mx-0 mb-4 mt-6 flex flex-row flex-wrap items-start justify-center gap-4 overflow-x-clip px-2 py-0'>
           {benefits.map((item) => (
@@ -48,7 +50,9 @@ const Benefits = () => {
                 `}
               >
                 <div className='flex flex-row items-center gap-4  p-4'>
-                  <img
+                  <Image
+                    width={80}
+                    height={80}
                     className='h-20 w-20 rounded-md object-fill'
                     src={item.brandImageUrl}
                     alt=''
@@ -66,7 +70,13 @@ const Benefits = () => {
                   </div>
                 </div>
               </div>
-              <img className='card-bg' src={item.imageUrl} alt='' />
+              <Image
+                width={384}
+                height={250}
+                className='card-bg'
+                src={item.imageUrl}
+                alt=''
+              />
             </div>
           ))}
         </div>

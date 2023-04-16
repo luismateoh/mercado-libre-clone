@@ -1,16 +1,17 @@
 import React from 'react';
+import Image from 'next/image';
 const promotions = [
   {
     title: 'RENUEVA TUS ESPACIOS',
     description: 'HOGAR Y MUEBLES HASTA 50% OFF',
-    imageSrc: './media/images/discover-1.png',
+    imageSrc: '/media/images/discover-1.png',
     imageAlt: '',
     buttonText: 'Ver más',
   },
   {
     title: 'SUSCRÍBETE AL NIVEL 6',
     description: 'POR SOLO $17.899 CADA MES',
-    imageSrc: './media/images/discover-2.png',
+    imageSrc: '/media/images/discover-2.png',
     imageAlt: '',
     buttonText: 'Suscribirme',
   },
@@ -18,7 +19,7 @@ const promotions = [
 
 const Discover = () => {
   return (
-    <section className='bg-[#ebebeb]' id='Discover'>
+    <section className='bg-[#ebebeb] pb-16' id='Discover'>
       <div className='section-container'>
         <div className='section-title'>
           <h2>Descubre</h2>
@@ -40,7 +41,12 @@ const Discover = () => {
                   {promotion.buttonText}
                 </button>
               </div>
-              <img src={promotion.imageSrc} alt={promotion.imageAlt} />
+              <Image
+                width={290}
+                height={250}
+                src={promotion.imageSrc}
+                alt={promotion.imageAlt}
+              />
             </div>
           ))}
         </div>
