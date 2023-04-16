@@ -16,7 +16,12 @@ const Footer = () => {
         <div className='flex flex-wrap content-center items-start justify-center px-0 py-10 '>
           <div className='flex flex-col content-center items-center justify-center py-0 sm:px-10'>
             <div className='flex h-full min-h-[105px] content-center items-center justify-center'>
-              <img src='./media/icons/footer-payment.svg' alt='' />
+              <Image
+                width={65}
+                height={65}
+                src='./media/icons/footer-payment.svg'
+                alt=''
+              />
             </div>
             <span className='flex items-center justify-center text-center text-[19px] font-medium leading-7 text-[#4b4b4b]'>
               Paga con tarjeta o en efectivo
@@ -40,7 +45,12 @@ const Footer = () => {
           </div>
           <div className='flex flex-col content-center items-center justify-center py-0 sm:px-10'>
             <div className='flex h-full min-h-[105px] content-center items-center justify-center'>
-              <img src='./media/icons/footer-shipping.svg' alt='' />
+              <Image
+                width={65}
+                height={65}
+                src='./media/icons/footer-shipping.svg'
+                alt=''
+              />
             </div>
             <span className='flex items-center justify-center text-center text-[19px] font-medium leading-7 text-[#4b4b4b]'>
               Envío gratis desde $ 90.000
@@ -62,7 +72,12 @@ const Footer = () => {
           </div>
           <div className='flex flex-col content-center items-center justify-center py-0 sm:px-10'>
             <div className='content-center; flex h-full min-h-[105px] items-center justify-center'>
-              <img src='./media/icons/footer-protected.svg' alt='' />
+              <Image
+                width={65}
+                height={65}
+                src='./media/icons/footer-protected.svg'
+                alt=''
+              />
             </div>
             <span className='flex items-center justify-center text-center text-[19px] font-medium leading-7 text-[#4b4b4b]'>
               Seguridad, de principio a fin
