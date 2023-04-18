@@ -97,8 +97,8 @@ const Footer = () => {
         </div>
       </div>
       <div className='w-full border-t border-solid border-t-[#e6e6e6]'>
-        <div className='section-container'>
-          <div className='mb-2 mt-3 flex flex-col content-start items-start gap-3 sm:flex-row sm:gap-5'>
+        <div className='section-container items-center sm:items-start'>
+          <div className='mb-2 mt-3 flex flex-col content-start items-center gap-3 sm:flex-row sm:items-start sm:gap-5'>
             {links.map((link, index) => (
               <Link
                 className='flex items-center text-xs font-normal leading-[13px] text-[#333333] no-underline'
@@ -116,8 +116,8 @@ const Footer = () => {
             Carrera 17 Numero 93 - 09 Piso 3, Bogotá D.C., Colombia
           </p>
         </div>
-        <div className='section-container'>
-          <div className='flex flex-row flex-wrap gap-5 border-t border-solid border-t-[#ededed] px-3 py-3'>
+        <div className='section-container '>
+          <div className='flex flex-row flex-wrap items-center justify-center gap-5  border-t border-solid border-t-[#ededed] px-3 py-3 sm:items-start sm:justify-start'>
             <Image
               width={141}
               height={31}

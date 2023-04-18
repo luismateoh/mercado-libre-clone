@@ -33,19 +33,19 @@ const Subscription = () => {
     >
       <div className='section-container w-full'>
         <div className=' my-10 flex w-full flex-col overflow-hidden rounded-md bg-white shadow-md'>
-          <div className='flex flex-row items-center justify-between bg-gradient-to-r from-[#a90f90] from-55% to-[#0c1a51] to-100% p-6'>
-            <div className='text-xl font-medium leading-none text-white sm:text-2xl sm:leading-9'>
+          <div className='flex flex-row items-center justify-between bg-gradient-to-r from-[#a90f90] to-[#0c1a51] p-5 sm:from-55% sm:to-100% sm:p-6'>
+            <div className='text-lg font-medium leading-none text-white sm:text-2xl sm:leading-9'>
               Suscríbete al nivel 6
             </div>
             <div className='flex min-w-[126px] flex-col border-l-2 border-solid border-l-white pl-1.5'>
-              <div className='text-left text-sm font-medium leading-5 text-white line-through'>
+              <div className='text-left text-xs font-medium leading-5 text-white line-through sm:text-sm'>
                 $ 50.690
               </div>
               <div className='flex flex-row flex-nowrap items-baseline gap-2'>
-                <span className='text-right text-xl font-semibold leading-6 text-white'>
+                <span className='text-right text-base font-semibold leading-6 text-white sm:text-xl'>
                   $ 17.899
                 </span>
-                <p className='text-right text-base font-semibold leading-4 text-white'>
+                <p className='text-right text-sm font-semibold leading-4 text-white sm:text-base'>
                   /mes
                 </p>
               </div>
@@ -78,7 +78,7 @@ const Subscription = () => {
             </div>
           </div>
           <div className='flex h-20 items-center justify-end border-t border-solid border-gray-300 px-6'>
-            <button className='leading-12 flex h-12 w-32 items-center justify-center rounded-md bg-blue-500 text-center text-base text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50'>
+            <button className='leading-12 flex h-12 w-full items-center justify-center rounded-md bg-blue-500 text-center text-base text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 sm:w-32'>
               Suscríbete
             </button>
           </div>

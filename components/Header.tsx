@@ -1,7 +1,6 @@
 import {
   MdOutlineSearch,
   MdOutlineLocationOn,
-  MdOutlineShoppingCart,
   MdOutlineHelp,
   MdOutlineAttachMoney,
   MdOutlineStyle,
@@ -15,7 +14,7 @@ import {
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { IconType } from 'react-icons';
+import CartButton from '@/components/CartButton';
 
 interface linkProps {
   label: string;
@@ -145,7 +144,7 @@ const Header = () => {
                     />
                   </svg>
                 </button>
-                <MdOutlineShoppingCart className='h-5 w-5 text-gray-600' />
+                <CartButton />
               </div>
 
               {isMenuOpen && (
@@ -188,7 +187,7 @@ const Header = () => {
                           </button>
                         </div>
                       </div>
-                      <ul className='space-y-4 py-5 sm:hidden'>
+                      <ul className='space-y-4 py-5 md:hidden'>
                         {menu.map((item) => (
                           <li key={item.label}>
                             <Link
@@ -255,7 +254,7 @@ const Header = () => {
                   <Link href='#'>Mis compras</Link>
                 </li>
                 <li>
-                  <MdOutlineShoppingCart className='h-5 w-5 text-gray-600' />
+                  <CartButton />
                 </li>
               </ul>
             </nav>

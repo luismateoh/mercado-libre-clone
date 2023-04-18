@@ -9,23 +9,27 @@ import { Stores } from '@/components/Stores';
 import { Collections } from '@/components/Collections';
 import { Categories } from '@/components/Categories';
 import { Footer } from '@/components/Footer';
+import { CartContextProvider } from '@/context/cartContext';
+import React from 'react';
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main>
-        <Banner />
-        <Payments />
-        <Offers />
-        <Subscription />
-        <Benefits />
-        <Discover />
-        <Stores />
-        <Collections />
-        <Categories />
-      </main>
-      <Footer />
-    </>
+    <CartContextProvider>
+      <>
+        <Header />
+        <main>
+          <Banner />
+          <Payments />
+          <Offers />
+          <Subscription />
+          <Benefits />
+          <Discover />
+          <Stores />
+          <Collections />
+          <Categories />
+        </main>
+        <Footer />
+      </>
+    </CartContextProvider>
   );
 }
