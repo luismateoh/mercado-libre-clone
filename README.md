@@ -4,7 +4,7 @@
 
 Clon de la página de Mercado Libre Colombia
 
-Este es el primer proyecto de la materia de Ingeniería Web de la Universidad de Antioquia.
+Este es el segundo proyecto de la materia de Ingeniería Web de la Universidad de Antioquia.
 
 El diseño en Figma se encuentra en el siguiente enlace:
 
